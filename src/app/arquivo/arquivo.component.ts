@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-arquivo',
   template: '<router-outlet></router-outlet>'
 })
-export class AppComponent {
-  title = 'upcensus-pj1';
+export class ArquivoComponent {
 }
