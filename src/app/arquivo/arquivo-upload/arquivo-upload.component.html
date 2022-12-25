@@ -1,2 +1,45 @@
 <input type="file" class="file-upload" (change)="onChange($event)">
 <button (click)="upload()" class="btn btn-success">Upload</button>
+
+
+<div class="jobs" *ngIf="job">
+  <h2>Jobs</h2>
+  <table>
+    <thead>
+      <th>
+        Arquivo
+      </th>
+      <th>
+        Data de criação
+      </th>
+      <th>
+        Data de inicialização
+      </th>
+      <th>
+        Data de finalização
+      </th>
+      <th>
+        Status
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          {{job.path}}
+        </td>
+        <td>
+          {{job.creationTime}}
+        </td>
+        <td>
+          {{job.startTime}}
+        </td>
+        <td>
+          {{job.finishTime}}
+        </td>
+        <td>
+          {{job.status.exitCode}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

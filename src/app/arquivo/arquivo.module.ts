@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -16,7 +17,8 @@ import { ArquivoComponent } from './arquivo.component';
   imports: [
     CommonModule,
     ArquivoRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ]
 })
 export class ArquivoModule { }
