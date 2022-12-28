@@ -19,7 +19,8 @@ export interface ExitStatus {
 }
 
 export interface JobResponse {
-  path: string,
+  originalFile: string,
+  resultFile: string,
   creationTime: Timestamp,
   startTime: Timestamp,
   finishTime: Timestamp,
